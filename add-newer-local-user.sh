@@ -52,3 +52,5 @@ echo "hostname: ${HOSTNAME}"
 
 #Clean up
 rm ${ERROR_FILE}
+
+#end
