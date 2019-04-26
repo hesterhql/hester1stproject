@@ -2,10 +2,11 @@
 # define ERROR_FILE location
 
 # root privileges check return exit 1 if not root
-
+#
+#
 if [[ ${UID} -ne 0 ]]
 then
-  echo "Only root can executes this script, please sudo or switch to root" >&2 
+  echo "Only root can executes this script, please sudo or switch to root" >&2
   exit 1
 fi
 
@@ -49,6 +50,5 @@ echo "username: ${USER_NAME}"
 echo "password: ${PASSWORD}"
 echo "hostname: ${HOSTNAME}"
 
-#Clean up 
+#Clean up
 rm ${ERROR_FILE}
-
